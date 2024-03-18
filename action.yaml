@@ -1,0 +1,19 @@
+name: "Generate random number"
+description: "Github Action that returns a random number"
+author: Vladimir Levin
+branding:
+  icon: code
+  color: purple
+inputs:
+  min:
+    description: The min value of the random number (min included)
+    default: '1'
+  max:
+    description: The max value of the random number (max included)
+    default: '10'
+outputs:
+  number:
+    description: Generated number
+runs:
+  using: 'node20'
+  main: 'action/index.js'

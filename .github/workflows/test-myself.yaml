@@ -1,0 +1,23 @@
+name: Test `random-number` action
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-random-number:
+    runs-on: [ 'ubuntu-latest' ]
+    name: Test
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Test
+        id: test
+        uses: ./
+        with:
+          min: 1
+          max: 1
+      - name: Check
+        run: |
+          echo "${{ steps.test.outputs.number }}"
+          test "${{ steps.test.outputs.number }}" = "1"
