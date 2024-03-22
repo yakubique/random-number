@@ -1,15 +1,17 @@
 # Random number
 
+[![Coverage](./badges/coverage.svg)](./badges/coverage.svg)
+[![Test `random-number` action](https://github.com/yakubique/random-number/actions/workflows/test-myself.yaml/badge.svg)](https://github.com/yakubique/random-number/actions/workflows/test-myself.yaml)
+
 Github Action that returns a random number
 
-[![Test `random-number` action](https://github.com/yakubique/random-number/actions/workflows/test-myself.yaml/badge.svg)](https://github.com/yakubique/random-number/actions/workflows/test-myself.yaml)
 
 [Usage workflow](https://github.com/yakubique/random-number/actions/workflows/test-myself.yaml)
 
 ## Usage
 ```yaml
 - name: Random number
-  uses: yakubique/random-number@v1
+  uses: yakubique/random-number@v1.1 
 ```
 
 ## Inputs

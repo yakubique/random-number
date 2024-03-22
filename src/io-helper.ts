@@ -1,7 +1,6 @@
-import * as core from '@actions/core';
 import { getNumberInput } from '@yakubique/atils/dist';
 
-enum Inputs {
+export enum Inputs {
     Min = 'min',
     Max = 'max'
 }
